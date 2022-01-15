@@ -1,0 +1,26 @@
+{
+  "name": "price_list_gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:api": "nodemon server/index.js",
+    "dev:client": "npm run start --prefix client",
+    "dev": "npm run dev:api && npm run dev:client",
+    "start": "node server/index.js",
+    "start-server": "node server/index.js",
+    "start-client": "npm run start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5",
+    "nodemon": "^2.0.15"
+  }
+}
